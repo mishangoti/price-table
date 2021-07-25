@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: normal;
+    background: #f0f0f0;
+}
+#content{
+    background-color:#fff;
+    width: 80%;
+    padding: 40px;
+    margin: auto auto;
+    border-right:1px solid #ddd;
+    box-shadow:0px 0px 16px #aaa;
+}
+.head{
+    font-family:Helvetica,Arial,Verdana;
+    font-weight:bold;
+    font-size:12px;
+    font-style:normal;
+    letter-spacing:3px;
+    color:#888;
+    border-bottom:3px solid #f0f0f0;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+.head a{
+    color:#1D81B6;
+    text-decoration:none;
+    float:right;
+    text-shadow:1px 1px 1px #888;
+}
+.head a:hover{
+    color:#f0f0f0;
+}
+#content h1{
+    font-family:"Trebuchet MS",sans-serif;
+    color:#1D81B6;
+    font-weight:normal;
+    font-style:normal;
+    font-size:56px;
+    text-shadow:1px 1px 1px #aaa;
+}
+#content h2{
+    text-align: center;
+    font-size:40px;
+    font-style:normal;
+    background-color:#f0f0f0;
+    margin:40px 0px 60px -40px;
+    padding:0px 40px 0px 40px;
+    clear:both;
+    float:left;
+    width:100%;
+    color:black;
+    text-shadow:1px 1px 1px #fff;
+}
+
+/* Table */
+table.table{
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+.first td {
+    color:#000000;
+    font-size: 26px;
+    font-weight: bold;
+    font-size:36px;
+    color:#000000;
+    border-top:none;
+}
+.first th {
+    padding:10px;
+    font-size:18px;
+    color:#888;
+}
+
+.table thead th, .table tfoot td{
+    padding: 10px;
+    color:#000000;
+    font-size: 26px;
+    font-weight: bold;
+}
+.table tfoot th{
+    padding:10px;
+    font-size:18px;
+    color:#888;
+}
+.table tfoot td{
+    font-size:36px;
+    color:#000000;
+    border-top:none;
+}
+.table tfoot button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+.table tfoot button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.table thead th:empty{
+    background:transparent;
+    box-shadow:none;
+}
+.table thead :nth-last-child(1){
+    border-right:none;
+}
+.table thead :first-child,
+.table tbody :nth-last-child(1){
+    border:none;
+}
+.table tbody th{
+    text-align:right;
+    padding:10px;
+    color:#333;
+    text-shadow:1px 1px 1px #ccc;
+    background-color:#f9f9f9;
+}
+.table tbody td{
+    padding:10px;
+    background-color:#f0f0f0;
+    border-right:1px dotted #999;
+    text-shadow:-1px 1px 1px #fff;
+    color:#333;
+}
+.table tbody .check{
+    content : url(../images/check0.png)
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+@media only screen and (max-width: 660px) {
+    #content{
+        width: 100%;
+        padding: 0;
+    }
+    #content h2{
+        padding: 0px 0px 0px 40px;
+    }
+    table.table{
+        font-size: 14px;
+    }
+    .table tbody td {
+        padding: 0;
+    }
+    .first td {
+        font-size: 24px;
+    }    
+    .first th {
+        font-size: 14px;
+    }
+    .table thead th {
+        font-size: 14px;
+    }
+    .table tfoot th {
+        font-size: 15px;
+    }
+    .table tfoot button {
+        padding: 5px 15px;
+    }    
+    h3{
+        font-size: 20px;
+    }
+    .details p, .references p{
+        font-size: 17px;
+    }
+}
